@@ -6,6 +6,8 @@ public class Main {
 		 Scanner scanner = new Scanner(System.in);
 		 Section1 s1 = new Section1();
 		 Section2 s2 = new Section2();
+		 Section3 s3 = new Section3();
+		 Section4 s4 = new Section4();
 		 
 		 while (true) {
 			 //
@@ -188,15 +190,69 @@ public class Main {
 						System.out.println(s2.boxSeq(steps));
 						break;
 					case 21:
+						double a21,b21,c21;
+						System.out.println("¬ведите коэффициент а: "); a21 = scanner.nextDouble();
+						System.out.println("¬ведите коэффициент b: "); b21 = scanner.nextDouble();
+						System.out.println("¬ведите коэффициент c: "); c21 = scanner.nextDouble();
+						System.out.println(s3.solutions(a21, b21, c21));
+						break;
 					case 22:
+						System.out.println("¬ведите строку: ");
+						scanner.nextLine();
+						String s22 = scanner.nextLine();
+						System.out.println(s3.findZip(s22));
+						break;
 					case 23:
+						System.out.println("¬ведите число: "); int num23 = scanner.nextInt();
+						System.out.println(s3.checkPerfect(num23));
+						break;
 					case 24:
+						System.out.println("¬ведите строку: ");
+						scanner.nextLine();
+						String s24 = scanner.nextLine();
+						System.out.println(s3.flipEndChars(s24));
+						break;
 					case 25:
+						System.out.println("¬ведите шестнадцатиричное число: ");
+						scanner.nextLine();
+						String str25 = scanner.nextLine();
+						System.out.println(s3.isValidHexCode(str25));
+						break;
 					case 26:
+						System.out.println("¬ведите длину первого массива: "); int num261 = scanner.nextInt();
+						int[] arr261 = new int[num261];
+						System.out.println("¬ведите элементы первого массива: ");
+						for(int i = 0; i < arr261.length; i++)
+							arr261[i] = scanner.nextInt();
+						
+						System.out.println("¬ведите длину второго массива: "); int num262 = scanner.nextInt();
+						int[] arr262 = new int[num262];
+						System.out.println("¬ведите элементы первого массива: ");
+						for(int i = 0; i < arr262.length; i++)
+							arr262[i] = scanner.nextInt();
+						
+						System.out.println(s3.same(arr261, arr262));
+						break;
 					case 27:
+						System.out.println("¬ведите число: "); int num27 = scanner.nextInt();
+						System.out.println(s3.isKaprekar(num27));
+						break;
 					case 28:
+						System.out.println("¬ведите двличное число: ");
+						scanner.nextLine();
+						String str28 = scanner.nextLine();
+						System.out.println(s3.longestZero(str28));
+						break;
 					case 29:
+						System.out.println("¬ведите число: "); int num29 = scanner.nextInt();
+						System.out.println(s3.nextPrime(num29));
+						break;
 					case 30:
+						System.out.println("¬ведите сторону а: "); double a30 = scanner.nextDouble();
+						System.out.println("¬ведите сторону b: "); double b30 = scanner.nextDouble();
+						System.out.println("¬ведите сторону c: "); double c30 = scanner.nextDouble();
+						System.out.println(s3.rightTriangle(a30, b30, c30));
+						break;
 					case 31:
 					case 32:
 					case 33:
